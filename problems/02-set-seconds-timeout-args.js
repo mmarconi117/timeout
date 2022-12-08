@@ -26,6 +26,8 @@ function setSecondsTimeoutArgs(cb, delayInSeconds, ...args) {
   // Your code here
   let time = delayInSeconds * 1000
   setTimeout(cb, time, ...args)
+
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -34,3 +36,7 @@ try {
 } catch {
   module.exports = null;
 }
+
+
+// let time = delayInSeconds * 1000
+//   setTimeout(cb, time, ...args)

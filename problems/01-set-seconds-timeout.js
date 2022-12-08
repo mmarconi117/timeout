@@ -26,7 +26,7 @@ setSecondsTimeout(function () {
 function setSecondsTimeout(cb, delayInSeconds) {
   // Your code here
   let time = delayInSeconds * 1000
- setTimeout(cb, time)
+  setTimeout(cb, time)
 
 }
 
@@ -46,3 +46,6 @@ try {
 } catch {
   module.exports = null;
 }
+
+// let time = delayInSeconds * 1000
+//  setTimeout(cb, time)
