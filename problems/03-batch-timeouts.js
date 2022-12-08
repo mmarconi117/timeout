@@ -34,8 +34,20 @@ console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]
 
 const batchTimeouts = (callbacks, times) => {
 
+  // Your code here
+  let newArr = []
+
+  for (let i = 0; i < callbacks.length; i++) {
+    let ele = callbacks[i]
+    let element = setTimeout(ele, delays[i])
+    newArr.push(element)
+  }
+  return newArr
+
 
 }
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
@@ -43,9 +55,12 @@ try {
 } catch {
   module.exports = null;
 }
+<<<<<<< HEAD
 
 
 // return callbacks.reduce((acc, el, index) => {
 //   acc.push(setTimeout(el, times[index]))
 //   return acc;
 // },[])
+=======
+>>>>>>> b53c27719e1b2be00bb73e6dfe7fb55e1a5efc9a
